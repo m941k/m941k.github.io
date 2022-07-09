@@ -1,0 +1,32 @@
+.main
+	background: url(../img/main_bg.png) center center/cover no-repeat
+	background-attachment: fixed
+	height: 900px
+	position: relative
+	.container
+		margin-bottom: 150px
+	&:after
+		background: url(../img/white_separator.png)
+		background-position-y: bottom
+		bottom: 0px
+		+separator
+	a
+		text-decoration: none
+		display: block
+	.logo
+		font-family: 'Minecraft'
+		text-align: center
+		color: rgba(255, 255, 255, 0.8)
+		font-size: 500%
+		transition: 1s all
+		user-select: none
+		&:hover
+			color: rgba(255, 255, 255, 1)
+			filter: drop-shadow(0px 0 10px rgb(255 255 255 / 0.25))
+			cursor: default
+	.main_desc
+		margin-top: 20px
+		font-size: 120%
+		letter-spacing: 1.5px
+		user-select: none
+		transition: all 1s ease

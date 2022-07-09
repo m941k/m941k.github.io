@@ -1,0 +1,48 @@
+.countings
+	background: url(../img/third_section_bg.png) center center/cover no-repeat
+	height: 900px
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	.row
+		.num_titles
+			display: block
+			text-align: center
+			font-size: 130%
+			font-weight: 600
+			letter-spacing: 1px
+			color: #e4eaff
+			opacity: .83
+	&:before
+		background: url(../img/white_separator2.png)
+		background-position-y: top
+		top: 0px
+		+separator
+	&:after
+		background: url(../img/black_separator.png)
+		background-position-y: bottom
+		bottom: 0px
+		+separator
+	.numbers
+		font-family: 'Minecraft'
+		font-size: 7vw
+		line-height: 1em
+		text-align: center
+		overflow: hidden
+		margin-bottom: 20px
+		color: #e4eaff
+		opacity: .83
+		&_window
+			display: inline-block
+			overflow: hidden
+			width: 0.6em
+			height: 1em
+			&_digit
+				word-break: break-all
+				display: block
+				&::before
+					content: attr(data-fake)
+					display: inline-block
+					width: 100%
+					height: auto

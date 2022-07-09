@@ -1,0 +1,41 @@
+@keyframes counting
+	100%
+		transform: translate3d(0, -10em, 0)
+=separator
+	content: ''
+	position: absolute
+	background-repeat: repeat-x
+	background-size: 40%
+	height: 100px
+	width: 100%
+::-webkit-scrollbar
+	width: 5px
+::-webkit-scrollbar-track
+	box-shadow: inset 0 0 5px grey
+	border-radius: 5px
+::-webkit-scrollbar-thumb
+	background: #a3a3a3
+	border-radius: 5px
+:root
+	--dark: #070707
+	--sizeindex: calc(1vw + 1vh)
+	--transition: .75s cubic-bezier(.2, .6, 0, 1)
+body
+	// height: 5000px
+	background-color: #000
+.container
+	padding: 50px 0px 50px 0px
+	&:first
+		padding: 0
+
+@import "navmenu"
+@import "main"
+@import "benefits"
+@import "countings"
+@import "countrylist"
+@import "adminlist"
+@import "footer"
+
+@import "rules_page"
+@import "shop_page"
+@import "media"
