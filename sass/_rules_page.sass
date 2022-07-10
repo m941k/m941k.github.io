@@ -7,5 +7,18 @@
 	&_down
 		color: #838383
 		text-align: center
-	&_points
+	&_subtitle
 		color: #c4c4c4
+		font-weight: 700
+	&_points
+		font-weight: 400
+ol
+	list-style: none
+	counter-reset: li
+	color: #fff
+.li
+	color: #c4c4c4
+	margin: 15px 0
+	&:before
+		counter-increment: li
+		content: counters(li, ". ") ". "
