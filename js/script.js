@@ -34,30 +34,42 @@ $('.slide-nav').on('click', function(e) {
     }
   });
 
-const copyButton = document.querySelector('#frammyDisc')
-copyButton.addEventListener('click', () => {
-  window.navigator.clipboard.writeText("frammy#8251")
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: frammy#8251";
-})
-const copyButton2 = document.querySelector('#nimsDisc')
-copyButton2.addEventListener('click', () => {
-  window.navigator.clipboard.writeText("Niсk#0460")
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: Niсk#0460";
-})
-const copyButton3 = document.querySelector('#frammyTele')
-copyButton3.addEventListener('click', () => {
-  window.navigator.clipboard.writeText("@meedeexx")
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: @meedeexx";
-})
-const copyButton4 = document.querySelector('#nimsTele')
-copyButton4.addEventListener('click', () => {
-  window.navigator.clipboard.writeText("@NimsTail")
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: @NimsTail";
-}) 
+const copyButtonFunc = (app, appLink) => {
+  const copyButton2 = document.querySelector(app)
+  copyButton2.addEventListener('click', () => {
+    window.navigator.clipboard.writeText(appLink);
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = `Coppied: ${appLink}`;
+  })
+}
+copyButtonFunc("#frammyDisc", "frammy#8251");
+copyButtonFunc("#nimsDisc", "Niсk#0460");
+copyButtonFunc("#frammyTele", "@meedeexx");
+copyButtonFunc("#nimsTele", "@NimsTail");
+// const copyButton = document.querySelector('#frammyDisc')
+// copyButton.addEventListener('click', () => {
+//   window.navigator.clipboard.writeText("frammy#8251")
+//   var tooltip = document.getElementById("myTooltip");
+//   tooltip.innerHTML = "Copied: frammy#8251";
+// })
+// const copyButton2 = document.querySelector('#nimsDisc')
+// copyButton2.addEventListener('click', () => {
+//   window.navigator.clipboard.writeText("Niсk#0460")
+//   var tooltip = document.getElementById("myTooltip");
+//   tooltip.innerHTML = "Copied: Niсk#0460";
+// })
+// const copyButton3 = document.querySelector('#frammyTele')
+// copyButton3.addEventListener('click', () => {
+//   window.navigator.clipboard.writeText("@meedeexx")
+//   var tooltip = document.getElementById("myTooltip");
+//   tooltip.innerHTML = "Copied: @meedeexx";
+// })
+// const copyButton4 = document.querySelector('#nimsTele')
+// copyButton4.addEventListener('click', () => {
+//   window.navigator.clipboard.writeText("@NimsTail")
+//   var tooltip = document.getElementById("myTooltip");
+//   tooltip.innerHTML = "Copied: @NimsTail";
+// }) 
 function outFunc () {
   var tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Copy to clipboard";
@@ -103,3 +115,14 @@ $('#subs_click').on('click', function(e) {
   if (subs_counter >= main_subs.length) subs_counter = 0;
   sub.innerHTML = main_subs[subs_counter++];
 })
+
+const toggleMobileNav = () => {
+
+	const togler = document.querySelector('.navbar-toggler');
+	const navbarCollapse = document.querySelector('.navbar-collapse');
+
+	togler.addEventListener('click', () => {
+		navbarCollapse.classList.toggle('collapse');
+	});
+};
+toggleMobileNav();
