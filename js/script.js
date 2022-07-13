@@ -1,14 +1,13 @@
 // dates script
 
-// let day_1 = new Date,
-//     day_2 = new Date
-// function diffDates(day_one, day_two) {
-//     return (day_one - day_two) / (60 * 60 * 24 * 1000);
-// };
-// var num = Math.floor(diffDates(day_2, day_1));
-// console.log("дней прошло с 22 декабря 2020 - "+num);
-// let array = (""+num).split("").map(Number)
-// document.getElementById("number1").innerHTML = array[0];
+let day_1 = new Date,
+    day_2 = new Date('2022, 07, 21')
+function diffDates(day_one, day_two) {
+    return (day_one - day_two) / (60 * 60 * 24 * 1000);
+};
+var num = Math.floor(diffDates(day_2, day_1));
+let array = (""+num).split("").map(Number)
+document.getElementById("number1").innerHTML = array[0];
 // document.getElementById("number2").innerHTML = array[1];
 // document.getElementById("number3").innerHTML = array[2];
 
@@ -100,14 +99,14 @@ function anim_nums(e) {
 document.addEventListener('scroll', anim_nums);
 
 let main_subs = [
-'В разработке...',
+'Запуск уже 20 июля!',
 'Ну и зачем ты тыкаешь на все подряд?',
 'Ну давай, понажимай',
 'Ломай, мы же богатые',
 'Только попробуй еще раз',
 'Лучше бы на сервер зашел поиграть',
 'Кнопка ниже, идиот',
-'Ладно, держи питсу <a href="https://steamcommunity.com/id/frammmy/">🍕</a>'
+'Ладно, держи питсу <a href="https://www.donationalerts.com/r/farlandsmc">🍕</a>'
 ]
 let subs_counter = 1;
 $('#subs_click').on('click', function(e) {
