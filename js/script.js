@@ -32,47 +32,19 @@ $('.slide-nav').on('click', function(e) {
       }, 100);
     }
   });
-
-const copyButtonFunc = (app, appLink) => {
-  const copyButton2 = document.querySelector(app)
+const copyButtonFunc = (app, appLink, tooltipID) => {
+  let copyButton2 = document.querySelector(app);
   copyButton2.addEventListener('click', () => {
-    window.navigator.clipboard.writeText(appLink);
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = `Coppied: ${appLink}`;
-  })
+    navigator.clipboard.writeText(appLink);
+    const tooltip = document.getElementById(tooltipID);
+    tooltip.innerHTML = `Copied: ${appLink}`;
+  });
 }
-copyButtonFunc("#frammyDisc", "frammy#8251");
-copyButtonFunc("#nimsDisc", "Niсk#0460");
-copyButtonFunc("#frammyTele", "@meedeexx");
-copyButtonFunc("#nimsTele", "@NimsTail");
-// const copyButton = document.querySelector('#frammyDisc')
-// copyButton.addEventListener('click', () => {
-//   window.navigator.clipboard.writeText("frammy#8251")
-//   var tooltip = document.getElementById("myTooltip");
-//   tooltip.innerHTML = "Copied: frammy#8251";
-// })
-// const copyButton2 = document.querySelector('#nimsDisc')
-// copyButton2.addEventListener('click', () => {
-//   window.navigator.clipboard.writeText("Niсk#0460")
-//   var tooltip = document.getElementById("myTooltip");
-//   tooltip.innerHTML = "Copied: Niсk#0460";
-// })
-// const copyButton3 = document.querySelector('#frammyTele')
-// copyButton3.addEventListener('click', () => {
-//   window.navigator.clipboard.writeText("@meedeexx")
-//   var tooltip = document.getElementById("myTooltip");
-//   tooltip.innerHTML = "Copied: @meedeexx";
-// })
-// const copyButton4 = document.querySelector('#nimsTele')
-// copyButton4.addEventListener('click', () => {
-//   window.navigator.clipboard.writeText("@NimsTail")
-//   var tooltip = document.getElementById("myTooltip");
-//   tooltip.innerHTML = "Copied: @NimsTail";
-// }) 
-function outFunc () {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
-}
+copyButtonFunc("#nimsDisc", "Niсk#0460", "myTooltip1");
+copyButtonFunc("#nimsTele", "@NimsTail", "myTooltip2");
+copyButtonFunc("#frammyDisc", "frammy#8251", "myTooltip3");
+copyButtonFunc("#frammyTele", "@meedeexx", "myTooltip4");
+
 
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
