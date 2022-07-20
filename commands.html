@@ -10,7 +10,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-image: url(img/black_bg.png); background-position: 0% 0%; background-repeat: repeat; background-size: 20%;">
+<body style="background-image: url(img/black_bg.png); background-position: 0% 0%; background-repeat: repeat; background-size: 60%;">
 	<nav class="navbar navbar-dark navbar-expand-lg">
 		<div class="container p-0 d-inline-block">	
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,24 +72,63 @@
             Возможности на сервере
         </div>
         <div class="rules_down">
-            Сервер в разработке...
+            Обновлено: 20 июля 2022 года
         </div>
     </div>
     <div class="container">
-        <!-- <ol>
-            <li class="com rules_subtitle">Невидимые рамки
+        <ol>
+            <li class="com rules_subtitle">Вход на сервер
 				<ol>
-					<li class="com rules_points">На сервере нет привата, все строится на доверии. Однако за нарушение правил вам грозит наказание.</li>
-					<li class="com rules_points">Незнание правил не освобождает вас от ответственности.</li>
+					<li class="com rules_points"><b>/reg "пароль"</b> - команда для регистрации.</li>
+					<li class="com rules_points"><b>/l "пароль"</b> - команда для логина, нужно вводить при каждом входе.</li>
 				</ol>
 			</li>
-			<li class="com rules_subtitle">Строительство городов
+			<li class="com rules_subtitle">Скины
 				<ol>
-					<li class="com rules_points">На одного человека можно зарегистрировать только один аккаунт.</li>
-					<li class="com rules_points">Запрещается любая передача аккаунтов.</li>
+					<li class="com rules_points"><b>/skin "ник"</b> - вы можете взять скин, который присвоен введенному нику.</li>
+					<li class="com rules_points"><b>/skin clear</b> - вернуть свой скин.</li>
 				</ol>
 			</li>
-        </ol> -->
+			<li class="com rules_subtitle">Дополнительные возможности
+				<ol>
+					<li class="com rules_points"><b>/sit</b> - Можете сидеть.</li>
+					<li class="com rules_points"><b>/lay</b> - Можно лечь.</li>
+					<li class="com rules_points"><b>/pm "ник" "сообщение"</b> - написать человеку в лс.</li>
+					<li class="com rules_points">При нажатии на любую ступеньку/полублок/коврик, вы на него сядете.</li>
+					<li class="com rules_points">На сервере добавлена возможность строить порталы в ад любой формы и размера.</li>
+					<li class="com rules_points">Невидимые рамки можно сделать из 1 туманного зелья невидимости и 8 рамок</li>
+				</ol>
+			</li>
+			<li class="com rules_subtitle">Жители
+				<ol>
+					<li class="com rules_points">Для баланса мы изменили принцип скидок у жителей. Теперь при заражении в вылечивании макисмальной скидкой будет 30% или даже меньше у определенных предметов.</li>
+					<li class="com rules_points">Также добавлена возможность покупать у странствующего торговца случайные головы.</li>
+				</ol>
+			</li>
+			<li class="com rules_subtitle">Войс чат
+				<ol>
+					<li class="com rules_points"><a href="https://www.curseforge.com/minecraft/mc-mods/plasmo-voice/download/3863790">Скачать мод</a> на войс чат</li>
+					<li class="com rules_points"><b>Настройки > Управление > Назначение клавиш > Plasmo Voice</b> - Установите удобную для вас кнопку вызова меню мода</li>
+					<li class="com rules_points">Выйдите из настроек и поставьте удобные для вас настройки.</li>
+				</ol>
+			</li>
+			<li class="com rules_subtitle">Города
+				<ol>
+					<li class="com rules_points"><b>/t new "название"</b> - Создать свой город. Стоимость: 45 алмазов (иметь в инвентаре).</li>
+					<li class="com rules_points">Поставить сундук и на него повесить табличку, где нужно написать: <b>[Town vault]</b> - Создать казну вашего города.<br><b class="red">Сундук можно поставить абсолютно в любом месте и абсолютно любой может брать из него деньги!</b></li>
+					<li class="com rules_points"><b>/t deposit</b> - Положить деньги на счет города. Алмазы должны лежать в инвентаре. Также можно просто положить алмазы/аб в сундук.<br><b class="red">При отсутсвии сундука алмазы просто пропадут.</b></li>
+					<li class="com rules_points"><b>/t</b> - Просмотреть информацию о своем городе.</li>
+				</ol>
+			</li>
+			<li class="com rules_subtitle">Нации
+				<ol>
+					<li class="com rules_points"><b>/nation new "название"</b> - Создать свою нацию. Стоимость: 100 алмазов (иметь в казне города).</li>
+					<li class="com rules_points">Поставить сундук и на него повесить табличку, где нужно написать: <b>[Nation vault]</b> - Создать казну вашего города.<br><b class="red">Сундук можно поставить абсолютно в любом месте и абсолютно любой может брать из него деньги!</b></li>
+					<li class="com rules_points"><b>/nation deposit</b> - Положить деньги на счет нации. Алмазы должны лежать в инвентаре. Также можно просто положить алмазы/аб в сундук.<br><b class="red">При отсутсвии сундука алмазы просто пропадут.</b></li>
+					<li class="com rules_points"><b>/nation</b> - Просмотреть информацию о своем городе.</li>
+				</ol>
+			</li>
+        </ol>
     </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="js/jquery-min.js"></script>
